@@ -1,0 +1,211 @@
+.advance-search-container {
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    margin-left:15rem;
+    box-sizing: border-box;
+  }
+ 
+  .whole-code{
+    width: 50vw;
+    height: 100vh;
+    background-color: #fff;
+  }
+  .advance-search .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .advance-search .item-search-link {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .advance-search .search-section {
+    margin-bottom: 20px;
+  }
+  
+  .advance-search .search-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .advance-search .search-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .advance-search .search-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .advance-search .dropdown {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .advance-search .input-box {
+    flex: 2;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .advance-search .item-type-section {
+    margin-bottom: 20px;
+  }
+  
+  .advance-search .item-type-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .advance-search .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .advance-search .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+  }
+  
+  .advance-search .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .advance-search .search-button,
+  .advance-search .more-options-button,
+  .advance-search .clear-fields-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .advance-search .search-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .advance-search .more-options-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .advance-search .clear-fields-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+
+  /* General container styles */
+.advance-search .container {
+    padding: 16px;
+    /* margin-top: 10rem; */
+  }
+  
+  /* Section styles */
+  .advance-search .section {
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9fafb; /* Slightly off-white background */
+  }
+  
+  .advance-search .section h3 {
+    font-size: 1.125rem; /* Large text */
+    font-weight: 600; /* Semi-bold */
+    margin-bottom: 12px;
+    color: #374151; /* Dark gray text */
+  }
+  
+  /* Input styles */
+  .advance-search select {
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%; /* Full width */
+    background-color: white;
+    color: #374151; /* Dark gray text */
+    font-size: 0.875rem; /* Small text */
+  }
+  
+  .advance-search select:hover,
+  .advance-search select:focus {
+    border-color: #4f46e5; /* Indigo border on hover */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .advance-search input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #4f46e5; /* Indigo checkbox */
+  }
+  
+  /* Label styles */
+  .advance-search label {
+    font-size: 0.875rem; /* Small text */
+    color: #374151; /* Dark gray text */
+  }
+  
+  .advance-search label.block {
+    display: block; /* Ensures labels above inputs are properly aligned */
+    margin-bottom: 8px;
+  }
+  
+  /* Grid styles for dropdowns */
+  .advance-search .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 16px; /* Space between items */
+  }
+  
+  .advance-search .grid-1-col {
+    grid-template-columns: 1fr; /* Single column for narrower sections */
+  }
+  
+  /* Utility styles */
+  .advance-search .mb-3 {
+    margin-bottom: 12px;
+  }
+  
+  .advance-search .mb-4 {
+    margin-bottom: 16px;
+  }
+  
+  .advance-search .text-lg {
+    font-size: 1.125rem;
+  }
+  
+  .advance-search .font-semibold {
+    font-weight: 600;
+  }
+  
+  .advance-search .border {
+    border: 1px solid #d1d5db;
+  }
+  
+  .advance-search .rounded {
+    border-radius: 4px;
+  }

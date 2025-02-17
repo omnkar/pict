@@ -2,9 +2,14 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState("");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -14,9 +19,9 @@ const Navbar = () => {
           <div className="left">
             <li>Circulation</li>
             <li>Patrons</li>
-            <div class="dropdown">
+            <div className="dropdown">
               <button
-                class="btn  dropdown-toggle"
+                className="btn dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -24,25 +29,25 @@ const Navbar = () => {
               >
                 Search
               </button>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Advanced Search
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Item Search
                   </a>
                 </li>
               </ul>
             </div>
             <li>
-              <i class="fa-solid fa-cart-shopping"></i>Cart
+              <i className="fa-solid fa-cart-shopping"></i>Cart
             </li>
-            <div class="dropdown">
+            <div className="dropdown">
               <button
-                class="btn dropdown-toggle"
+                className="btn dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -50,54 +55,54 @@ const Navbar = () => {
               >
                 More
               </button>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     List
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Cataloging
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Acquisitions
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Authorities
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Serials
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Reports
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Suggestions
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Tools
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Administration
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     About Koha
                   </a>
                 </li>
@@ -106,9 +111,9 @@ const Navbar = () => {
           </div>
           <div className="right">
             <li>libadmin</li>
-            <div class="dropdown">
+            <div className="dropdown">
               <button
-                class="btn  dropdown-toggle"
+                className="btn dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -116,24 +121,24 @@ const Navbar = () => {
               >
                 Pune Institute of Computer Technology
               </button>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Set Library
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     My Account
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     My Checkouts
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Logout
                   </a>
                 </li>
@@ -141,8 +146,22 @@ const Navbar = () => {
             </div>
             <li>Help</li>
           </div>
+          <button className="menu-icon" onClick={toggleMenu}>
+            &#9776;
+          </button>
         </nav>
-
+        {isMenuOpen && (
+          <div className="mobile-menu">
+            <li>Circulation</li>
+            <li>Patrons</li>
+            <li>Search</li>
+            <li>Cart</li>
+            <li>More</li>
+            <li>libadmin</li>
+            <li>Pune Institute of Computer Technology</li>
+            <li>Help</li>
+          </div>
+        )}
         <div className="container">
           <div className="row mt-4 under_nav">
             <div className="col-2">
@@ -150,7 +169,7 @@ const Navbar = () => {
                 className="text"
                 style={{ fontSize: "50px", listStyleType: "none" }}
               >
-                PICT
+                <img src="/images/pict.jpg" alt="" className=""/>
               </li>
             </div>
             <div className="col-10 left_sec">
@@ -161,11 +180,11 @@ const Navbar = () => {
               <span>
                 <button>Submit</button>
               </span>
-              <ul className="nav nav-tabs">
+              <ul className="nav nav-tabs tab">
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    aria-current="page"
+                    aria-current=""
                     href="#"
                     onClick={() =>
                       handleTabClick("Enter patron card number or partial name")
@@ -212,9 +231,8 @@ const Navbar = () => {
                     className="nav-link"
                     aria-disabled="true"
                     onClick={() => handleTabClick("Enter search keywords:")}
-                  >
-                    Search The Catalog
-                  </a>
+                  >Search The Catalog</a>
+                    
                 </li>
               </ul>
             </div>

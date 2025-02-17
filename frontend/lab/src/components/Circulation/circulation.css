@@ -1,0 +1,34 @@
+.button-container {
+    display: flex; /* Arrange button groups in a row */
+    justify-content: space-around; /* Increase spacing between groups */
+    align-items: flex-start; /* Align button groups at the top */
+    width: 100%; /* Full-width container */
+    padding: 1rem; /* Optional padding */
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.button-group {
+    margin: 0 3rem; /* Increase horizontal spacing between groups */
+    border: none; /* Retain your existing styling */
+}
+
+/* Button styling (unchanged) */
+.nner-button {
+    height: 2rem;
+    width: 15rem;
+    border: 1px solid rgb(111, 128, 139);
+    border-radius: 0.3rem !important;
+    font-size: 1.3rem ;
+    font-weight: bold !important;
+    color: rgba(7, 7, 7, 0.817) !important;
+    background-color: rgba(237, 224, 221) !important;
+    margin-bottom: 2rem !important;
+    justify-content: flex-start !important;
+}
+.inner-heading{
+    color:rgb(5, 6, 5);
+}
+.circulation{
+    margin-top: 5rem;
+    margin-left: 5rem;
+}

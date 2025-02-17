@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    max-width: 100%;
+    margin-top: 20px;
+    height: 50%;
+}
+.box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.box h5 {
+    
+}
+.list-section {
+    margin-top: 1rem;
+}
+.list-section h6 {
+    font-weight: 500;
+}
+form .input-group {
+    max-width: 300px;
+}
+input{
+    margin-left: 2rem;
+}
+
+.box{
+    width: 50%;
+    margin-left: 10rem;
+}
+.listbox .list-section{
+    height: 50%;
+}
+a
+{
+    font-size: 0.9rem;
+}

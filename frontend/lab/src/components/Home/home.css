@@ -1,0 +1,55 @@
+ /* Home.css */
+#root {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    /* background-image: url('image.jpg'); */
+    /* background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* background-color: rgba(187, 203, 203, 0.235); */
+    
+  }
+  
+  /* #root::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+  } */
+  
+  .button-group {
+    margin-right:  10rem !important;
+    margin-left: 1rem !important;
+    border: none;
+  }
+  
+  .inner-button {
+    height: 2.5rem;
+    width: 20rem;
+    border: 1px solid rgb(111, 128, 139);
+    /* border-radius: 5rem; */
+    border-radius: 0.3rem;
+    font-size: 1.6rem ;
+    font-weight: bold ;
+    color: rgba(7, 7, 7, 0.817) !important;
+    background-color: rgba(237, 224, 221) !important;
+    margin-bottom: 2rem !important;
+    justify-content: flex-start !important;
+  }
+  
+  .inner-button .MuiButton-startIcon svg {
+    font-size: 2.4rem !important;
+    margin-right: 2rem;
+  }
+  
+  .button-group .inner-button:last-child {
+    margin-bottom: 0;
+  }

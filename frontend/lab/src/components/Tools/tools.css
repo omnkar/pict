@@ -1,0 +1,38 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    color: #0056b3;
+    font-weight: bold;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  li a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+
+  .description {
+    color: #555;
+    font-size: 0.8rem;
+    font-weight: medium;
+  }

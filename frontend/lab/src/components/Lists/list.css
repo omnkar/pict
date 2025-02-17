@@ -1,0 +1,12 @@
+.form-container{
+    border: 2px solid black;
+    height: 65vh;
+    border-radius: 2rem;
+}
+.innercontainer{
+    width: 20%;
+    height: 10%;
+    margin-left: 5rem;
+    padding: 1rem;
+    /* border: 2px solid black; */
+}
