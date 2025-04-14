@@ -15,16 +15,16 @@ export function Circulation() {
         >
           <h3 className="inner-heading">Circulation</h3>
           <Button variant="outlined" className="nner-button">
-            Circulation
+            CheckOut
           </Button>
           <Button variant="outlined" className="nner-button">
-            Patrons
+            CheckIn
           </Button>
           <Button variant="outlined" className="nner-button">
-            Advance Search
+            Renew 
           </Button>
           <Button variant="outlined" className="nner-button">
-            Lists
+            set library
           </Button>
         </ButtonGroup>
 

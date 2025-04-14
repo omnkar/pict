@@ -2,12 +2,12 @@ import React from "react";
 import "./reports.css";
 const Reports = () => {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="box">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6">
+          <div className="box">
             <h5 className="fs-4">Guided reports</h5>
-            <ul class="list-unstyled">
+            <ul className="list-unstyled">
               <li>
                 <a href="#">Create guided report</a>
               </li>
@@ -18,21 +18,21 @@ const Reports = () => {
                 <a href="#">Use saved</a>
               </li>
             </ul>
-            <form class="mt-3">
-              <div class="mb-3">
-                <label for="search" class="form-label">
+            <form className="mt-3">
+              <div className="mb-3">
+                <label htmlFor="search" className="form-label">
                   Search by keyword:
                 </label>
-                <div class="input-group">
+                <div className="input-group">
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     id="search"
                     placeholder=""
                   />
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     style={{ backgroundColor: "rgba(208, 110, 83)" }}
                   >
                     Search
@@ -88,8 +88,8 @@ const Reports = () => {
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="list-section">
+        <div className="col-md-6">
+          <div className="list-section">
             <h6 className="fs-4">Top lists</h6>
             <ul class="list-unstyled">
               <li>
@@ -101,7 +101,7 @@ const Reports = () => {
             </ul>
           </div>
 
-          <div class="list-section">
+          <div className="list-section">
             <h6 className="fs-4">Inactive</h6>
             <ul class="list-unstyled">
               <li>
@@ -113,9 +113,9 @@ const Reports = () => {
             </ul>
           </div>
 
-          <div class="list-section">
+          <div className="list-section">
             <h6 className="fs-4">Other</h6>
-            <ul class="list-unstyled">
+            <ul className="list-unstyled">
               <li>
                 <a href="#">Items lost</a>
               </li>

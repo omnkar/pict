@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import  { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState("");
@@ -31,14 +32,14 @@ const Navbar = () => {
               </button>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to="/advancedsearch" className="dropdown-item">
                     Advanced Search
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to="/itemsearch" className="dropdown-item" >
                     Item Search
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
